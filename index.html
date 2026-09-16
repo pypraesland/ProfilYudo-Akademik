@@ -203,6 +203,46 @@
     margin:0;
   }
 
+  /* ---------- sorotan / stat cards ---------- */
+  .stat-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+  @media(min-width:560px){
+    .stat-grid{ grid-template-columns:repeat(2,1fr); }
+  }
+  .stat-card{
+    display:flex;
+    gap:16px;
+    align-items:flex-start;
+    padding:24px;
+    background:#fff;
+    border-radius:20px;
+    box-shadow:0 8px 22px -12px rgba(43,33,24,0.3);
+  }
+  .stat-emoji{
+    width:50px; height:50px; border-radius:14px;
+    display:flex; align-items:center; justify-content:center;
+    font-size:1.5rem; flex-shrink:0;
+  }
+  .stat-number{
+    font-family:var(--serif);
+    font-weight:700;
+    font-size:1.9rem;
+    line-height:1.1;
+    margin-bottom:4px;
+  }
+  .stat-label{
+    font-weight:700;
+    font-size:0.98rem;
+    margin-bottom:4px;
+  }
+  .stat-desc{
+    font-size:0.87rem;
+    color:var(--muted);
+  }
+
   /* ---------- role cards ---------- */
   .role{
     display:flex;
@@ -356,6 +396,7 @@
   <div class="topbar-inner">
     <span class="topbar-mark">P.Y.P.</span>
     <nav class="topbar-links">
+      <a href="#sorotan">Sorotan</a>
       <a href="#karier">Karier</a>
       <a href="#pendidikan">Pendidikan</a>
       <a href="#organisasi">Organisasi</a>
@@ -390,6 +431,33 @@
     </div>
   </div>
 </header>
+
+<section id="sorotan" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="icon-badge bg-gold">✨</span>
+      <h2>Sorotan</h2>
+    </div>
+    <div class="stat-grid">
+      <div class="stat-card">
+        <span class="stat-emoji" style="background:#D6F1EC;">🔬</span>
+        <div>
+          <div class="stat-number">20+ Publikasi Ilmiah</div>
+          <div class="stat-label">Linguistik Terapan &amp; Manajemen SDM</div>
+          <div class="stat-desc">Mulai dari SINTA hingga SCOPUS Q1</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-emoji" style="background:#FBDCE6;">🎙️</span>
+        <div>
+          <div class="stat-number">150+ Event</div>
+          <div class="stat-label">Sebagai Pembicara</div>
+          <div class="stat-desc">Seputar Publikasi Ilmiah, Penelitian, Beasiswa Studi Lanjut, hingga Persiapan Karier</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="karier">
   <div class="wrap">
