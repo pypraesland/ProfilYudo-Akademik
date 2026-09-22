@@ -268,7 +268,7 @@
   .edu{
     display:flex;
     gap:18px;
-    align-items:center;
+    align-items:flex-start;
     padding:22px;
     background:#fff;
     border-radius:18px;
@@ -286,6 +286,14 @@
   .edu-school{ font-family:var(--serif); font-weight:700; font-size:1.15rem; }
   .edu-degree{ margin-top:2px; }
   .edu-period{ font-size:0.88rem; color:var(--muted); margin-top:3px; }
+  .edu-thesis{
+    font-size:0.85rem;
+    color:var(--ink);
+    margin-top:8px;
+    padding-top:8px;
+    border-top:1px dashed var(--rule);
+  }
+  .edu-thesis b{ color:var(--muted); font-weight:600; }
 
   /* ---------- organisasi ---------- */
   .org-list{ display:flex; flex-direction:column; gap:12px; }
@@ -331,6 +339,35 @@
   .award-emoji{ font-size:1.15rem; flex-shrink:0; margin-top:1px; }
   .award-title{ font-weight:600; font-size:0.98rem; }
   .award-meta{ font-size:0.84rem; color:var(--muted); margin-top:2px; }
+
+  /* ---------- publikasi ---------- */
+  .pub-intro{
+    font-size:0.95rem;
+    color:var(--muted);
+    margin:16px 0 18px;
+    max-width:60ch;
+  }
+  .pub-list{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .pub-item{
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+    padding:14px 18px;
+    background:#fff;
+    border-radius:14px;
+    box-shadow:0 4px 12px -10px rgba(43,33,24,0.3);
+    font-size:0.9rem;
+    line-height:1.55;
+  }
+  .pub-emoji{ font-size:1.05rem; flex-shrink:0; margin-top:2px; }
+  .pub-item a{ color:var(--sky); font-weight:600; text-decoration:underline; }
 
   /* ---------- portofolio ---------- */
   .gallery{
@@ -412,7 +449,6 @@
   <div class="wrap hero-inner">
     <div class="hero-text">
       <h1>Prahoro Yudo Purwono, S.M., S.S., M.Hum.</h1>
-      <p class="hero-role"><span class="emoji">💼</span> Product Development Lead, Trainer Public Speaking, dan Trainer Analisis Data di YEC.CO.ID</p>
       <div class="hero-chips">
         <a class="chip" href="https://www.linkedin.com/in/prahoroyudopurwono/" target="_blank" rel="noopener">
           <span class="chip-dot" style="background:#DCEBFA;">💼</span> LinkedIn
@@ -456,6 +492,22 @@
           <div class="stat-desc">Seputar Publikasi Ilmiah, Penelitian, Beasiswa Studi Lanjut, hingga Persiapan Karier</div>
         </div>
       </div>
+      <div class="stat-card">
+        <span class="stat-emoji" style="background:#FCEACB;">🏅</span>
+        <div>
+          <div class="stat-number">40+ Juara Utama</div>
+          <div class="stat-label">Kompetisi Ilmiah &amp; Non-Ilmiah</div>
+          <div class="stat-desc">Tingkat Nasional &amp; Internasional</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-emoji" style="background:#EEE0F5;">🎓</span>
+        <div>
+          <div class="stat-number">LPDP Awardee</div>
+          <div class="stat-label">Persiapan Keberangkatan (PK) Angkatan 205</div>
+          <div class="stat-desc">Beasiswa S2 Magister Humaniora, Universitas Indonesia</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -469,9 +521,9 @@
     <div class="role">
       <span class="role-emoji" style="background:#FFE1D6;">🚀</span>
       <div>
-        <div class="role-title">Product Development Lead</div>
+        <div class="role-title">Product, Learning and Development Lead</div>
         <div class="role-org">YEC.CO.ID</div>
-        <div class="role-period">2021 - sekarang</div>
+        <div class="role-period">2021 - 2023 &amp; 2025 - sekarang</div>
       </div>
     </div>
     <div class="role">
@@ -499,12 +551,40 @@
       <span class="icon-badge bg-gold">🎓</span>
       <h2>Pendidikan Terakhir</h2>
     </div>
-    <div class="edu">
+    <div class="edu" style="margin-bottom:14px;">
+      <div class="edu-badge" style="background:#EEE0F5; border-color:var(--plum); color:#6B3B87;">🎓</div>
+      <div>
+        <div class="edu-school">Universitas Terbuka</div>
+        <div class="edu-degree">Magister Manajemen (M.M.), Manajemen dan Pengembangan Sumber Daya Manusia</div>
+        <div class="edu-period">2026 - sekarang</div>
+        <div class="edu-thesis"><b>Tesis:</b> Diferensiasi Kepemimpinan Fungsional-Geografis, Keadilan Organisasi, dan Sistem Kompensasi Berbasis Pendidikan Terhadap Efisiensi Kerja serta Kepuasan Karyawan Pada Perusahaan Teknologi Pendidikan</div>
+      </div>
+    </div>
+    <div class="edu" style="margin-bottom:14px;">
       <div class="edu-badge">UI</div>
       <div>
         <div class="edu-school">Universitas Indonesia</div>
-        <div class="edu-degree">Magister Humaniora, Applied Linguistics</div>
+        <div class="edu-degree">Magister Humaniora (M.Hum.), Linguistik Terapan untuk Kajian Bahasa dan Kebudayaan Indonesia - Jerman</div>
         <div class="edu-period">2023 - 2025</div>
+        <div class="edu-thesis"><b>Tesis:</b> Proksimisasi Dalam Berita Bertema Perang Rusia-Ukraina di Media Massa Jerman Deutsche Welle</div>
+      </div>
+    </div>
+    <div class="edu" style="margin-bottom:14px;">
+      <div class="edu-badge" style="background:#D6F1EC; border-color:var(--teal); color:#0E6B62;">🎓</div>
+      <div>
+        <div class="edu-school">Universitas Terbuka</div>
+        <div class="edu-degree">Sarjana Manajemen (S.M.), Manajemen dan Pengembangan Sumber Daya Manusia</div>
+        <div class="edu-period">2019 - 2025</div>
+        <div class="edu-thesis"><b>Tugas Akhir:</b> Rancang Bangun "Dolan Yuk" sebagai Discovery and Investation Platform untuk Pengembangan Pariwisata Kediri Berkelanjutan</div>
+      </div>
+    </div>
+    <div class="edu">
+      <div class="edu-badge" style="background:#DCEBFA; border-color:var(--sky); color:#1F5C8A;">🎓</div>
+      <div>
+        <div class="edu-school">Universitas Negeri Surabaya</div>
+        <div class="edu-degree">Sarjana Sastra (S.S.), Bahasa, Sastra dan Kebudayaan Jerman</div>
+        <div class="edu-period">2017 - 2021</div>
+        <div class="edu-thesis"><b>Skripsi:</b> Kalimat Deklaratif dalam Iklan McDonald</div>
       </div>
     </div>
   </div>
@@ -516,13 +596,29 @@
       <span class="icon-badge bg-sky">📚</span>
       <h2>Publikasi</h2>
     </div>
-    <a class="contact-card" href="https://scholar.google.com/citations?user=cDXHFGEAAAAJ&hl=de&authuser=1" target="_blank" rel="noopener" style="max-width:360px;">
-      <span class="contact-badge" style="background:#4285F4;">GS</span>
-      <span>
-        <span class="contact-label">Google Scholar</span><br>
-        <span class="contact-sub">Lihat daftar publikasi ilmiah</span>
-      </span>
-    </a>
+    <p class="pub-intro">20+ publikasi ilmiah di bidang Linguistik Terapan &amp; Manajemen SDM, mulai dari jurnal SINTA hingga SCOPUS Q1:</p>
+    <ul class="pub-list">
+      <li class="pub-item"><span class="pub-emoji">📄</span><span>Hidayat N, S., Oktavianti, M., Purwono, P. Y., Musakkir, M., &amp; Marhamah N, N. (2026). The enigma of subjectivity: Subjective experience, its fate in psychology, psychoanalysis and philosophy of mind, edited by Morris N. Eagle, Routledge, New York 2024, X+251 pp., $160 (Hardcover), ISBN: 9781032686943. <em>Philosophical Psychology</em>, 39(2), 707–711. <a href="https://doi.org/10.1080/09515089.2024.2406541" target="_blank" rel="noopener">https://doi.org/10.1080/09515089.2024.2406541</a></span></li>
+      <li class="pub-item"><span class="pub-emoji">📄</span><span>Purwono, P. Y. (2025). Indonesian Language Planning in the Education Sector. <em>MIMESIS</em>, 6(2), 166-179.</span></li>
+      <li class="pub-item"><span class="pub-emoji">📄</span><span>Purwono, P. Y. (2024). Bentuk Dan Fungsi Sinonim Dalam Teks Berita Tentang Pidato Olaf Scholz Berjudul “Frieden Ohne Freiheit Heisst Unterdrückung”. <em>Paramasastra: Jurnal Ilmiah Bahasa Sastra dan Pembelajarannya</em>, 11(1), 1-18.</span></li>
+      <li class="pub-item"><span class="pub-emoji">📄</span><span>Purwono, P. Y., &amp; Kushartanti, B. (2024). Deiksis dalam Cerpen “Die Kuechenuhr“ Karya Wolfgang Borchert. <em>Metahumaniora</em>, 14(1), 26-34.</span></li>
+      <li class="pub-item"><span class="pub-emoji">📄</span><span>Purwono, P. Y. (2024). Does Israel Commit Genocide Crimes Against Palestine: Perspective of Former Chief Prosecutor of the International Criminal Court. <em>Paramasastra: Jurnal Ilmiah Bahasa Sastra dan Pembelajarannya</em>, 11(2), 169-187.</span></li>
+      <li class="pub-item"><span class="pub-emoji">📄</span><span>Purwono, P. Y. (2024). ICULTOURE.ID Sebagai Media Pendukung Pembelajaran Bahasa Indonesia Terintegrasi Pengenalan Budaya. <em>Inspirasi: Jurnal Pendidikan dan Kebudayaan</em>, 1(1), 34-52.</span></li>
+      <li class="pub-item"><span class="pub-emoji">📄</span><span>Purwono, P. Y. (2024). Is Continuous Training to Re-Skilling and Up-Skilling Employees Needed by Companies?. <em>Jurnal Akuntansi Dan Manajemen</em>, 21(2), 149-164.</span></li>
+      <li class="pub-item"><span class="pub-emoji">📄</span><span>Purwono, P. Y., &amp; Datang, F. A. (2024). Lexical and Grammatical Meaning's Ambiguity in the Job Creation Law Number 6 of 2023. <em>KEMBARA: Jurnal Keilmuan Bahasa, Sastra, dan Pengajarannya</em>, 10(2), 566-583.</span></li>
+      <li class="pub-item"><span class="pub-emoji">📄</span><span>Purwono, P. Y. (2023). Total Physical Response with Communicative Approach (TPRCA) Method in Primary School English Learning. <em>Jurnal Pendidikan Bahasa Inggris Undiksha</em>, 11(2), 181-187.</span></li>
+      <li class="pub-item"><span class="pub-emoji">📄</span><span>Purwono, P. Y. (2023). Konstruksi Kalimat dalam Teks Iklan McDonald Berbahasa Jerman: Kajian Stilistika Sintaksis. <em>Brila: Journal of Foreign Language Education</em>, 3(2), 60-75.</span></li>
+      <li class="pub-item"><span class="pub-emoji">📄</span><span>Santoso, S., Negara, I. H., Salsabila, S., Prihadi, A. A., &amp; Purwono, P. Y. (2022). Tabungan Literasi Berbasis Kearifan Lokal (Tali Kekal) sebagai Solusi Penanaman Minat Literasi Siswa. <em>Acitya Bhakti</em>, 2(1), 65-72.</span></li>
+      <li class="pub-item"><span class="pub-emoji">📄</span><span>Purwono, P. Y. (2021). Learning German to Improve Students' Writing Skills with AWAN ASA Application. <em>Brila: Journal of Foreign Language Education</em>, 1(2), 55-67.</span></li>
+      <li class="pub-item"><span class="pub-emoji">📄</span><span>Purwono, P. Y. (2021). Representasi Perempuan Dalam Dua Ilustrasi Jerman Bertema Hari Perempuan Sedunia Karya Johannes Geisthard. <em>KREDO: Jurnal Ilmiah Bahasa dan Sastra</em>, 5(1), 222-238.</span></li>
+      <li class="pub-item"><span class="pub-emoji">📄</span><span>Purwono, P. Y. (2021). Citraan pada Kumpulan Puisi Bertema Musim Gugur Karya Goethe. <em>Jurnal Al-Azhar Indonesia Seri Humaniora</em>, 6(2), 107-115.</span></li>
+      <li class="pub-item"><span class="pub-emoji">📄</span><span>Purwono, P. Y. (2021). Deiksis Spasial dan Temporal dalam Kumpulan Cerpen Berbahasa Jerman Karya Raphael Herzog. <em>Metahumaniora</em>, 11(2), 159-171.</span></li>
+      <li class="pub-item"><span class="pub-emoji">📄</span><span>Purwono, P. Y., Rasiawan, M. F., &amp; Wijaya, O. V. (2021). Pembelajaran Bahasa Jerman Untuk Meningkatkan Keterampilan Menulis Mahasiswa Berbantuan Aplikasi Awan Asa. <em>Brila: Journal of Foreign Language Education</em>, 1(2), 55-67.</span></li>
+      <li class="pub-item"><span class="pub-emoji">📄</span><span>Purwono, P. Y. (2021). Stilistika Sintaksis Iklan McDonald Berbahasa Jerman Periode Desember 2020. <em>Metahumaniora</em>, 11(1), 29-43.</span></li>
+      <li class="pub-item"><span class="pub-emoji">📄</span><span>Prameswati, L. N., Nafi'ah, I. M., &amp; Purwono, P. Y. (2021). Program Pendampingan Pembelajaran bagi Siswa Sekolah Dasar Kota Kediri di Masa Pandemi. <em>Jurnal Pasopati</em>, 3(1).</span></li>
+      <li class="pub-item"><span class="pub-emoji">📄</span><span>Purwono, P. Y., &amp; Asteria, P. V. (2021). Pembelajaran BIPA dengan Aplikasi AWAN ASA Berbasis Pengenalan Lintas Budaya. <em>Fon: Jurnal Pendidikan Bahasa dan Sastra Indonesia</em>, 17(1), 97-107.</span></li>
+      <li class="pub-item"><span class="pub-emoji">📄</span><span>Purwono, Prahoro Y., et al. (2021). Gubuk Ziswaf: Solusi Pembiayaan Hidup Masyarakat Berbasis Pemberdayaan Lokal di Tengah Pandemi Covid-19. <em>Jurnal Ekonomi Rabbani</em>, 1(2). DOI: <a href="https://doi.org/10.53566/jer.v1i2.32" target="_blank" rel="noopener">10.53566/jer.v1i2.32</a></span></li>
+    </ul>
   </div>
 </section>
 
@@ -573,6 +669,30 @@
           <div class="org-period">2020</div>
         </div>
       </div>
+      <div class="org-item" style="--stripe:var(--coral);">
+        <span class="org-emoji">🔎</span>
+        <div>
+          <div class="org-role">Staff Ahli Departemen Penalaran dan Riset</div>
+          <div class="org-org">Unit Kegiatan Ilmiah Mahasiswa UNESA</div>
+          <div class="org-period">2019</div>
+        </div>
+      </div>
+      <div class="org-item" style="--stripe:var(--gold);">
+        <span class="org-emoji">🧪</span>
+        <div>
+          <div class="org-role">Staff Bidang Penelitian dan Pengembangan</div>
+          <div class="org-org">HMJ Bahasa dan Sastra Jerman UNESA</div>
+          <div class="org-period">2019</div>
+        </div>
+      </div>
+      <div class="org-item" style="--stripe:var(--sky);">
+        <span class="org-emoji">📖</span>
+        <div>
+          <div class="org-role">Staff Departemen Penalaran dan Riset</div>
+          <div class="org-org">Unit Kegiatan Ilmiah Mahasiswa UNESA</div>
+          <div class="org-period">2018</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -595,7 +715,6 @@
       <p class="year-label" style="background:#D6F1EC; color:#0E6B62;">📅 2022</p>
       <ul class="award-list">
         <li class="award-item"><span class="award-emoji">🌟</span><div><div class="award-title">Juara Duta Budaya Inspiratif Jawa Timur</div><div class="award-meta">Paguyuban Duta Budaya Jawa Timur · Juli 2022</div></div></li>
-        <li class="award-item"><span class="award-emoji">✨</span><div><div class="award-title">10 Besar Finalis LKTIN Economic Paper Competition</div><div class="award-meta">Universitas Surabaya · Mei 2022</div></div></li>
       </ul>
     </div>
 
@@ -604,6 +723,7 @@
       <ul class="award-list">
         <li class="award-item"><span class="award-emoji">🌟</span><div><div class="award-title">Lulusan Terbaik dengan Nilai Non Akademik Tertinggi Pertama, Periode Wisuda 102</div><div class="award-meta">Universitas Negeri Surabaya · November 2021</div></div></li>
         <li class="award-item"><span class="award-emoji">🌟</span><div><div class="award-title">Mahasiswa Berprestasi Utama Jenjang Sarjana</div><div class="award-meta">Universitas Terbuka UPBJJ Surabaya · Mei 2021</div></div></li>
+        <li class="award-item"><span class="award-emoji">✨</span><div><div class="award-title">10 Besar Finalis LKTIN Economic Paper Competition</div><div class="award-meta">Universitas Surabaya · Mei 2021</div></div></li>
       </ul>
     </div>
 
@@ -616,7 +736,9 @@
         <li class="award-item"><span class="award-emoji">🥉</span><div><div class="award-title">Juara 3 LKTIN Simposium Budaya</div><div class="award-meta">Universitas Padjajaran · November 2020</div></div></li>
         <li class="award-item"><span class="award-emoji">🥈</span><div><div class="award-title">Juara 2 International Economic Research Competition</div><div class="award-meta">Universitas Negeri Surabaya · Oktober 2020</div></div></li>
         <li class="award-item"><span class="award-emoji">🥉</span><div><div class="award-title">Juara 3 LKTIN Penalaran Competition</div><div class="award-meta">Universitas Kanjuruhan Malang · Oktober 2020</div></div></li>
+        <li class="award-item"><span class="award-emoji">✨</span><div><div class="award-title">Finalis 10 Besar Lomba Esai Nasional Lingua Artistica</div><div class="award-meta">Universitas Negeri Semarang · Oktober 2020</div></div></li>
         <li class="award-item"><span class="award-emoji">🎗️</span><div><div class="award-title">Juara Harapan 1 LKTIN Tracival</div><div class="award-meta">Universitas Sultan Ageng Tirtayasa · Oktober 2020</div></div></li>
+        <li class="award-item"><span class="award-emoji">✨</span><div><div class="award-title">Finalis 10 Besar LKTIN TIMDIKSI</div><div class="award-meta">Universitas Mataram · September 2020</div></div></li>
         <li class="award-item"><span class="award-emoji">🎗️</span><div><div class="award-title">Juara Harapan 2 LKTIN Pekan Pendidikan Ekonomi Nasional</div><div class="award-meta">Universitas Lambung Mangkurat · September 2020</div></div></li>
         <li class="award-item"><span class="award-emoji">🥇</span><div><div class="award-title">Juara 1 Business Proposal Competition</div><div class="award-meta">Universitas Negeri Surabaya · Juli 2020</div></div></li>
         <li class="award-item"><span class="award-emoji">🌟</span><div><div class="award-title">Mahasiswa Berprestasi Utama Jenjang Sarjana</div><div class="award-meta">Universitas Negeri Surabaya · Mei 2020</div></div></li>
@@ -628,8 +750,10 @@
       <ul class="award-list">
         <li class="award-item"><span class="award-emoji">🥈</span><div><div class="award-title">Juara 2 Kategori Paper, LKTIN AGROFEST 11</div><div class="award-meta">Universitas Pendidikan Indonesia · November 2019</div></div></li>
         <li class="award-item"><span class="award-emoji">🥇</span><div><div class="award-title">Juara 1 Kategori Poster, LKTIN AGROFEST 11</div><div class="award-meta">Universitas Pendidikan Indonesia · November 2019</div></div></li>
+        <li class="award-item"><span class="award-emoji">✨</span><div><div class="award-title">Finalis 10 Besar Lomba Poster Ilmiah Nasional LIMLARTS ke-3</div><div class="award-meta">Universitas Negeri Yogyakarta · Oktober 2019</div></div></li>
+        <li class="award-item"><span class="award-emoji">🥇</span><div><div class="award-title">Juara 1 Lomba Debat Asian Parliamentary System</div><div class="award-meta">Universitas Negeri Surabaya · September 2019</div></div></li>
         <li class="award-item"><span class="award-emoji">🥉</span><div><div class="award-title">Juara 3 Lomba Esai Nasional LENSA</div><div class="award-meta">STIE Surakarta · Mei 2019</div></div></li>
-        <li class="award-item"><span class="award-emoji">🥈</span><div><div class="award-title">Juara 2 Lomba Menulis Puisi Nasional PPSI</div><div class="award-meta">April 2019</div></div></li>
+        <li class="award-item"><span class="award-emoji">🥈</span><div><div class="award-title">Juara 2 Lomba Menulis Puisi Nasional</div><div class="award-meta">PPSI · April 2019</div></div></li>
         <li class="award-item"><span class="award-emoji">🥇</span><div><div class="award-title">Juara 1 LKTIN RWrC</div><div class="award-meta">Universitas Negeri Yogyakarta · April 2019</div></div></li>
         <li class="award-item"><span class="award-emoji">🥉</span><div><div class="award-title">Juara 3 Lomba Menulis Cerpen Nasional</div><div class="award-meta">Toscamedia · Februari 2019</div></div></li>
       </ul>
@@ -638,10 +762,17 @@
     <div class="year-group">
       <p class="year-label" style="background:#FBDCE6; color:#A03A61;">📅 2018</p>
       <ul class="award-list">
+        <li class="award-item"><span class="award-emoji">✨</span><div><div class="award-title">Finalis 10 Besar Lomba Menulis Puisi Nasional</div><div class="award-meta">Lingkar Pena Media · Desember 2018</div></div></li>
         <li class="award-item"><span class="award-emoji">🥇</span><div><div class="award-title">Juara 1 Kategori Presentasi, LKTIN FIPER</div><div class="award-meta">Universitas Negeri Surabaya · November 2018</div></div></li>
         <li class="award-item"><span class="award-emoji">🥇</span><div><div class="award-title">Juara 1 Kategori Presentasi, LKTIN Economic Research Competition</div><div class="award-meta">Universitas Negeri Surabaya · Oktober 2018</div></div></li>
+        <li class="award-item"><span class="award-emoji">🥇</span><div><div class="award-title">Juara 1 Lomba Menulis Puisi Writing Competition 2.0</div><div class="award-meta">UNESA · November 2018</div></div></li>
+        <li class="award-item"><span class="award-emoji">🎗️</span><div><div class="award-title">Juara Favorit Lomba Menulis Fiksi Mini</div><div class="award-meta">Jejak Publisher · September 2018</div></div></li>
         <li class="award-item"><span class="award-emoji">🥇</span><div><div class="award-title">Juara 1 Lomba Menulis Puisi Nasional</div><div class="award-meta">Kujang Pustaka · Juni 2018</div></div></li>
+        <li class="award-item"><span class="award-emoji">✨</span><div><div class="award-title">Finalis 10 Besar Lomba Poster Ilmiah Nasional LIMLARTS ke-2</div><div class="award-meta">Universitas Negeri Yogyakarta · Mei 2018</div></div></li>
+        <li class="award-item"><span class="award-emoji">🥇</span><div><div class="award-title">Juara 1 Lomba Menulis Puisi Writing Competition 1.0</div><div class="award-meta">UNESA · Mei 2018</div></div></li>
+        <li class="award-item"><span class="award-emoji">✨</span><div><div class="award-title">Finalis 10 Besar LKTIN TIUPPS ke-13</div><div class="award-meta">Universitas Merdeka Malang · April 2018</div></div></li>
         <li class="award-item"><span class="award-emoji">🥇</span><div><div class="award-title">Juara 1 Kompetisi Debat Mahasiswa Indonesia</div><div class="award-meta">Universitas Negeri Surabaya · Maret 2018</div></div></li>
+        <li class="award-item"><span class="award-emoji">✨</span><div><div class="award-title">Finalis 15 Besar LKTIN AUC</div><div class="award-meta">Universitas Pendidikan Ganesha · Maret 2018</div></div></li>
         <li class="award-item"><span class="award-emoji">🎖️</span><div><div class="award-title">Honorable Mention Award, Lomba Menulis PKM 6 Tingkat Nasional</div><div class="award-meta">IKAUNSOED Wilayah Solo Raya · Februari 2018</div></div></li>
       </ul>
     </div>
