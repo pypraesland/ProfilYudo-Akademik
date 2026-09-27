@@ -235,11 +235,11 @@
   }
   .stat-label{
     font-weight:700;
-    font-size:0.98rem;
+    font-size:0.92rem;
     margin-bottom:4px;
   }
   .stat-desc{
-    font-size:0.87rem;
+    font-size:0.84rem;
     color:var(--muted);
   }
 
@@ -260,9 +260,9 @@
     display:flex; align-items:center; justify-content:center;
     font-size:1.25rem; flex-shrink:0;
   }
-  .role-title{ font-family:var(--serif); font-weight:600; font-size:1.12rem; }
-  .role-org{ font-weight:600; margin-top:2px; }
-  .role-period{ font-size:0.88rem; color:var(--muted); margin-top:3px; }
+  .role-title{ font-family:var(--serif); font-weight:600; font-size:1.05rem; }
+  .role-org{ font-weight:600; font-size:0.92rem; margin-top:2px; }
+  .role-period{ font-size:0.84rem; color:var(--muted); margin-top:3px; }
 
   /* ---------- grouped role with career break (LinkedIn-style) ---------- */
   .role-group{
@@ -312,7 +312,7 @@
     background:#fff;
     box-shadow:0 0 0 3px #fff, 0 0 0 4px var(--muted);
   }
-  .role-tl-title{ font-family:var(--serif); font-weight:600; font-size:1rem; }
+  .role-tl-title{ font-family:var(--serif); font-weight:600; font-size:1.05rem; }
   .role-tl-item.is-break .role-tl-title{ color:var(--muted); font-style:italic; }
   .role-tl-period{ font-size:0.84rem; color:var(--muted); margin-top:2px; font-weight:600; }
   .role-tl-note{ font-size:0.88rem; color:var(--ink); margin-top:4px; }
@@ -336,11 +336,11 @@
     background:#FCEACB;
     flex-shrink:0;
   }
-  .edu-school{ font-family:var(--serif); font-weight:700; font-size:1.15rem; }
-  .edu-degree{ margin-top:2px; }
-  .edu-period{ font-size:0.88rem; color:var(--muted); margin-top:3px; }
+  .edu-school{ font-family:var(--serif); font-weight:700; font-size:1.05rem; }
+  .edu-degree{ font-size:0.92rem; margin-top:2px; }
+  .edu-period{ font-size:0.84rem; color:var(--muted); margin-top:3px; }
   .edu-thesis{
-    font-size:0.85rem;
+    font-size:0.88rem;
     color:var(--ink);
     margin-top:8px;
     padding-top:8px;
@@ -361,9 +361,9 @@
     box-shadow:0 6px 16px -12px rgba(43,33,24,0.25);
   }
   .org-emoji{ font-size:1.25rem; flex-shrink:0; }
-  .org-role{ font-family:var(--serif); font-weight:600; font-size:1.02rem; }
+  .org-role{ font-family:var(--serif); font-weight:600; font-size:1.05rem; }
   .org-org{ color:var(--muted); font-size:0.92rem; margin-top:2px; }
-  .org-period{ font-size:0.82rem; color:var(--muted); margin-top:4px; font-weight:600; }
+  .org-period{ font-size:0.84rem; color:var(--muted); margin-top:4px; font-weight:600; }
 
   /* ---------- prestasi ---------- */
   .year-group{ margin-bottom:26px; }
@@ -390,7 +390,7 @@
     box-shadow:0 4px 12px -10px rgba(43,33,24,0.3);
   }
   .award-emoji{ font-size:1.15rem; flex-shrink:0; margin-top:1px; }
-  .award-title{ font-weight:600; font-size:0.98rem; }
+  .award-title{ font-family:var(--serif); font-weight:600; font-size:1.05rem; }
   .award-meta{ font-size:0.84rem; color:var(--muted); margin-top:2px; }
 
   /* ---------- publikasi ---------- */
@@ -419,9 +419,9 @@
   }
   .pub-emoji{ font-size:1.05rem; flex-shrink:0; margin-top:2px; }
   .pub-item a{ color:var(--sky); font-weight:600; text-decoration:underline; }
-  .pub-title{ font-family:var(--serif); font-weight:600; font-size:0.98rem; line-height:1.45; }
-  .pub-journal{ font-size:0.86rem; color:var(--muted); margin-top:5px; font-style:italic; }
-  .pub-date{ font-size:0.8rem; color:var(--teal); margin-top:5px; font-weight:600; }
+  .pub-title{ font-family:var(--serif); font-weight:600; font-size:1.05rem; line-height:1.45; }
+  .pub-journal{ font-size:0.92rem; color:var(--muted); margin-top:5px; font-style:italic; }
+  .pub-date{ font-size:0.84rem; color:var(--teal); margin-top:5px; font-weight:600; }
 
   /* ---------- portofolio ---------- */
   .gallery{
@@ -475,8 +475,8 @@
     color:#fff;
     flex-shrink:0;
   }
-  .contact-label{ font-weight:700; font-size:0.98rem; }
-  .contact-sub{ font-size:0.82rem; color:var(--muted); word-break:break-word; }
+  .contact-label{ font-family:var(--serif); font-weight:700; font-size:1.05rem; }
+  .contact-sub{ font-size:0.84rem; color:var(--muted); word-break:break-word; }
 
   @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
 </style>
@@ -620,7 +620,7 @@
   <div class="wrap">
     <div class="section-head">
       <span class="icon-badge bg-gold">🎓</span>
-      <h2>Pendidikan Terakhir</h2>
+      <h2>Pendidikan</h2>
     </div>
     <div class="edu" style="margin-bottom:14px;">
       <div class="edu-badge" style="background:#EEE0F5; border-color:var(--plum); color:#6B3B87;">🎓</div>
@@ -635,7 +635,7 @@
       <div class="edu-badge">UI</div>
       <div>
         <div class="edu-school">Universitas Indonesia</div>
-        <div class="edu-degree">Magister Humaniora (M.Hum.), Linguistik Terapan - Bahasa &amp; Kebudayaan Indonesia - Jerman</div>
+        <div class="edu-degree">Magister Humaniora (M.Hum.), Linguistik Terapan Indonesia – Jerman</div>
         <div class="edu-period">2023 - 2025</div>
         <div class="edu-thesis"><b>Tesis:</b> Proksimisasi Dalam Berita Bertema Perang Rusia-Ukraina di Media Massa Jerman Deutsche Welle</div>
       </div>
